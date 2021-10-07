@@ -59,7 +59,7 @@ const PickUpForm = () => {
                                     check === 4 && <span className='icon icon-check'></span>
                                 }
                             </div>
-                            <span>Юнусабадский район, ул. А. Амира Темура 141, ТЦ "Kefayat"</span>
+                            <span>Юнусабадский район, ул. А. Амира Темура 141, ТЦ Kefayat</span>
                         </div>
                     </li>
                     <li className='d-flex align-items-center'>
