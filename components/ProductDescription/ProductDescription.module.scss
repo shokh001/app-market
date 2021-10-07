@@ -1,0 +1,93 @@
+@import 'styles/colors';
+
+.ProductDescription {
+    display: flex;
+
+  h5 {
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue;
+    margin-bottom: 30px;
+  }
+
+  .leftContent {
+      width: 650px;
+      margin-right: 100px;
+    a {
+        font-size: 14px;
+        line-height: 17px;
+        color: $blue;    
+        display: flex;
+        justify-content: flex-end;
+      }
+    h6,
+    p {
+      font-size: 14px;
+      line-height: 17px;
+      color: $blue;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-left: 20px;
+    }
+  }
+
+  .rightContent {
+      position: relative;
+    .box {
+      margin-bottom: 30px;
+      border-radius: 5px;
+      background: #ffffff;
+      padding: 18px 20px;
+
+      h4 {
+        font-size: 14px;
+        line-height: 17px;
+        color: $blue;
+      }
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        color: $blue;
+        margin-top: 14px;
+      }
+
+      span {
+        font-size: 11px;
+        line-height: 13px;
+        color: #a8a8a8;
+      }
+    }
+
+    button {
+      font-size: 14px;
+      line-height: 17px;
+      color: #fff;
+      background-color: $blue;
+      padding: 21px 92px;
+      border-radius: 5px;
+    }
+
+    .textareaWrap {   
+        position: absolute;     
+        width: 100%;
+        right: 0;
+        bottom: -138px;
+        textarea {
+          padding: 16px;
+          height: 200px;
+          width: 100%;
+          outline-color: $blue;
+          border: none;
+          margin-bottom: 20px;
+        background-color: #fff;
+        &::placeholder {
+          font-size: 12px;
+          line-height: 15px;
+          color: #c8c8c8;
+        }
+      }
+
+    }
+  }
+}

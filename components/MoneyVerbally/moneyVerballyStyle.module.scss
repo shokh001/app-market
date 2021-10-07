@@ -1,0 +1,50 @@
+@import "../../styles//globals.scss";
+
+.moneyVerballyWrap {
+  width: 380px;
+  padding: 32.55px 68px 22.81px 18.91px;
+  border-radius: 6.3px;
+  background-color: #fff;
+  margin-top: 25px;
+
+  h2 {
+    font-size: 22.649px;
+    line-height: 28px;
+    color: #213b85;
+    margin-bottom: 13px;
+  }
+
+  label {
+    font-size: 17.6159px;
+    line-height: 21px;
+    color: $light-blue;
+    margin-bottom: 6.3px;
+  }
+
+  input[type="text"] {
+    width: 125.83px;
+    height: 35.23px;
+    padding-left: 16px;
+    color: #0d3ca3;
+    background: #edf1f4;
+    border: 1.25828px solid #5085f9;
+    box-sizing: border-box;
+    border-radius: 6.29139px;
+    outline-color: $blue;
+
+    &::placeholder {
+      color: #0d3ca3;
+    }
+  }
+
+  input[type="range"] {
+    width: 100%;
+    margin-bottom: 6.3px;
+  }
+
+  h3 {
+    font-size: 17.6159px;
+    line-height: 21px;
+    color: #0d3ca3;
+  }
+}

@@ -1,0 +1,344 @@
+@import 'styles/colors';
+
+.ProductDetails {
+  h5 {
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue;
+
+    span {
+      font-size: 15px;
+      line-height: 19px;
+      margin-right: 15px;
+    }
+  }
+
+  h3 {
+    font-size: 29px;
+    line-height: 35px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: $blue;
+  }
+
+  .count {
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      color: $blue;
+      margin-right: 65px;
+      span {
+        display: block;
+        color: #ababab;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .buyNowBtn {
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff;
+      padding: 9px 28px;
+      background-color: $blue;
+      border-radius: 5px;
+      margin-right: 15px;
+    }
+
+    .counter {
+      border: 0.5px solid $blue;
+      border-radius: 10px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 14px;
+        line-height: 17px;
+        color: $blue;
+      }
+
+      button {
+        border: none;
+        border-radius: 0 10px 10px 0;
+        background-color: #fff;
+        span {
+          width: 9px;
+          height: 9px;
+          margin-bottom: 2px;
+        }
+
+        &:first-child {
+          border-radius: 10px 0 0 10px;
+        }
+      }
+    }
+
+    .addBasket {
+      width: 34px;
+      height: 34px;
+      background: $blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      margin-left: 10px;
+      span {
+        background: #fff;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .detail {
+    h6 {
+      color: $blue;
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      span {
+        width: 18px;
+        height: 18px;
+        margin-right: 12px;
+      }
+    }
+
+    p {
+      margin-left: 10px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .docs {
+    font-size: 14px;
+    color: $blue;
+    line-height: 17px;
+    display: flex;
+    margin-top: 21px;
+    align-items: center;
+
+    span {
+      width: 18px;
+      height: 18px;
+      margin-left: 10px;
+    }
+  }
+
+  .line {
+    width: 490px;
+    height: 1px;
+    background-color: #e4e4e4;
+    margin: 15px 0;
+  }
+
+  h4 {
+    font-size: 17px;
+    line-height: 21px;
+    color: $blue;
+    margin-bottom: 32px;
+  }
+
+  .dressDetails { 
+    p {
+      font-size: 14px;
+      line-height: 17px;
+      color: $blue;
+      margin-top: 30px;
+    }
+
+    h6 {
+      font-size: 14px;
+      line-height: 17px;
+      color: $blue;
+      margin-bottom: 15px;      
+    }  
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $blue;
+      width: 50px;
+      height: 50px;
+
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(3) {
+        margin: 0 5px;
+      }
+
+      &:first-child {
+        margin-right: 5px;
+      }
+
+      &:last-child{
+        margin-left: 5px;
+      }
+    }
+
+    .active {
+      border: 3px solid $blue;
+    }
+  }
+
+  .telefonDetails {
+
+    .active {
+      border: 3px solid #1d3783;
+    }
+    p {
+      font-size: 14px;
+      line-height: 17px;
+      color: $blue;
+      margin-top: 30px;
+    }
+
+    h6 {
+      font-size: 14px;
+      line-height: 17px;
+      color: $blue;
+      margin-bottom: 15px;      
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+    }
+
+    .boxGreen {
+      background-color: #04d700;
+      margin-right: 5px;
+    }
+
+    .boxYellow {
+      background-color: #d7b800;
+      margin: 0 5px;
+    }
+    .boxBlue {
+      background: #006fd77e;
+      margin: 0 5px;
+    }
+    .boxPink {
+      background: #d300d77c;  
+      margin: 0 5px;
+    }
+    .boxLightGreen {
+      background-color: #00d74c;
+      margin-left: 5px;
+    }
+  }
+
+  .chooseProductDetail {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    & > div {
+      margin-right: 30px;
+    }
+
+    .dressSize {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      border: 1px solid $blue;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 17px;
+      color: $blue;
+    }
+
+    .check {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $light-blue;
+      border-radius: 50%;
+      margin-right: 15px;
+
+      span {
+        width: 9px;
+        height: 9px;
+        background-color: $light-blue;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    p {
+      font-size: 14px;
+      color: $blue;
+      line-height: 17px;
+    }
+
+    span {
+      margin: 0 20px;
+      width: 7px;
+      height: 11px;
+    }
+  }
+
+  .chooseMec {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    p {
+      margin: 0 10px;
+      cursor: context-menu;
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid $light-blue;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .active {
+        background-color: $light-blue;
+      }
+    }
+  }
+
+  .cost {
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue;
+  }
+
+  .btn {
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    background-color: $blue;
+    padding: 21px 74px;
+    border-radius: 5px;
+  }
+}

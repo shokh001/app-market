@@ -1,0 +1,74 @@
+@import "../../styles/globals.scss";
+
+@mixin inputSelectStyle($hT, $wH, $bC, $bN, $oC, $bR) {
+    height: $hT;
+    width: $wH;
+    background-color: $bC;
+    border: $bN;
+    outline: $oC;
+    border-radius: $bR;
+    -webkit-border-radius: $bR;
+    -moz-border-radius: $bR;
+    -ms-border-radius: $bR;
+    -o-border-radius: $bR;
+}
+
+.formWrapper {
+    width: 777px;
+    padding: 38px 30px 230px 38px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+
+    .formTitle {
+        font-size: 20px;
+        line-height: 24px;
+        color: $blue;
+        margin-left: 22px;
+        margin-bottom: 53px;
+    }
+
+    form {
+        .inputWrap {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            label {
+                font-size: 14px;
+                line-height: 17px;
+                color: $blue;
+            }
+
+            input {
+                @include inputSelectStyle(39px, 618px, #EDF1F4, none, $blue, 5px);
+            }
+
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            select {
+                @include inputSelectStyle(39px, 618px, #EDF1F4, none, $blue, 5px);
+
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            img {
+                cursor: pointer;
+                position: absolute;
+                top: 16.5px;
+                right: 16px;
+            }
+        }
+    }
+}

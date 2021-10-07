@@ -1,0 +1,88 @@
+@import "../../styles/globals.scss";
+
+.registrationWrap {
+  width: 1039px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 55, 131, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  .registrationImg {
+    width: 510px;
+    padding: 142px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: linear-gradient(173.3deg, #40579b 25.81%, #1d3783 94.75%);
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .registrationContent {
+    padding: 114px 0 0 67px;
+
+    h2 {
+      font-size: 18px;
+      line-height: 22px;
+      color: $blue;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 15px;
+      color: #1d3783;
+      margin-bottom: 15px;
+    }
+
+    form {
+      div {
+        position: relative;
+
+        input {
+          width: 401px;
+          height: 30px;
+          padding: 8px 0 7px 44px;
+          border-radius: 5px;
+          background: #f8f8f8;
+          box-sizing: border-box;
+          border: 1px solid rgba(29, 55, 131, 0.2);
+          outline-color: $blue;
+          color: #8b98be;
+
+          &:first-child {
+            margin-bottom: 10px;
+          }
+          &::placeholder {
+            color: #8b98be;
+          }
+        }
+
+        &:nth-child(2) {
+          input:first-child {
+            margin-bottom: 15px;
+          }
+        }
+        img {
+          position: absolute;
+          top: 8px;
+          left: 11px;
+        }
+      }
+
+      button {
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        line-height: 17px;
+        border-radius: 5px;
+        padding: 12px 89px;
+        background: #213b85;
+      }
+    }
+  }
+}

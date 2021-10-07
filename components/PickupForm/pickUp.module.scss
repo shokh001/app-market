@@ -1,0 +1,87 @@
+@import 'styles/colors';
+
+.pickUpForm {
+  background-color: #fff;
+  padding: 38px 51px 84px;
+  width: 777px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+    color: $blue;
+    margin-bottom: 30px;
+  }
+
+  .headerCard {
+      margin-bottom: 30px;
+    input {
+      width: 264px;
+      padding: 9px 0px 9px 15px;
+      background: #edf1f4;
+      border-radius: 5px;
+      border: none;
+      outline-color: $blue;
+
+      &::placeholder {
+        color: #1d3783;
+        opacity: 0.5;
+      }
+
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .link {
+    font-size: 16px;
+    line-height: 20px;
+    color: $light-blue;
+    margin-bottom: 28px;
+    display: inline-block;
+  }
+
+  .bodyCard {
+    li {
+      margin-top: 13px;
+
+      input {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid $light-blue;
+      }
+
+      span {
+        cursor: pointer;
+      }
+
+      .cirgle {
+        margin: 0 15px;
+      }
+      .check {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $light-blue;
+        border-radius: 50%;
+        margin-right: 15px;
+
+        span {
+          width: 9px;
+          height: 9px;
+          background-color: $light-blue;
+        }
+      }
+
+      .descr {
+        padding: 7px 20px;
+        background: #edf1f4;
+        border-radius: 5px;
+      }
+    }
+  }
+}

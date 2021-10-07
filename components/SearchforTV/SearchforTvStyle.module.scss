@@ -1,0 +1,97 @@
+@import 'styles/globals.scss';
+
+
+.SearchforTvWrap{
+     width: 312px;
+     margin-right: 40px;
+
+     h2{
+          font-size: 24px;
+          line-height: 29px;
+          padding-top: 30px;
+          color: $blue;
+          border-top: 1px solid #C4C4C4;
+          margin-bottom: 20px;
+     }
+
+     .summa{
+          margin-bottom: 30px;
+          p{
+               font-size: 16px;
+               line-height: 20px;
+               color:rgba(0,0,0,0.1);
+               border: 1px solid $blue;
+               border-radius: 5px;
+               padding: 10px 30px;
+               white-space: nowrap;
+               margin-bottom: 0;
+
+               &:nth-child(3){
+                    padding: 10px 11px;
+               }
+          }
+          span{
+               width: 20px;
+               height: 2px;
+               background-color: $blue;
+               display: block;
+               margin: 0 6px;
+          }
+          
+     }
+     .productsName{
+          padding-top: 30px;
+          border-top: 1px solid #C4C4C4;
+          
+          div{
+               width: 281px;
+               padding: 10px 0px 10px 0px;
+               font-size: 16px;
+               line-height: 19px;
+               color: #223869;
+               cursor: pointer;
+
+               &:last-child{
+                    margin-bottom:20px;
+               }
+          }
+
+          .activeName{
+               color: #fff;
+               padding-left: 11px;
+               border-radius: 5px;
+               background-color: $blue;
+          }
+     }
+     .brendNames{
+          padding-top: 30px;
+          border-top: 1px solid #C4C4C4;
+          cursor: pointer;
+
+          .brendName{
+               .square{
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid #213B85;
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    margin-right: 10px;
+                    background-color: #fff;
+                    cursor: pointer;
+               }
+               .activeRadio{
+                    background-color: $blue;
+               }
+               span{
+                    display: block;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #223869;
+               }
+
+               &:not(:last-child){
+                    margin-bottom: 20px;
+               }
+          }
+     }
+}

@@ -1,0 +1,57 @@
+@import 'styles/colors';
+
+.phoneNumber {
+    h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 37px;
+      color: $blue;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 21px;
+      color: $blue;
+    }
+
+    h5 {
+      font-size: 13px;
+      line-height: 16px;
+      color: $blue;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    input {
+      background: #ffffff;
+      border: 1px solid rgba(33, 59, 133, 0.4);
+      border-radius: 5px;
+      outline-color: $blue;
+      padding: 10px 0 10px 30px;
+      width: 510px;
+      font-size: 17px;
+      line-height: 21px;
+
+      &::placeholder {
+        color: #000000;
+        opacity: 0.5;
+      }
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      color: #fff;
+      background-color: $blue;
+      padding: 10px 48px;
+      border: none;
+      border-radius: 5px;
+    }
+  }

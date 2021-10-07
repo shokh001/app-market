@@ -1,0 +1,74 @@
+@import 'styles/colors';
+
+.personalData {
+    position: relative;
+    width: 281px;
+
+    h2 {
+      margin-bottom: 7px;
+      font-size: 30px;
+      line-height: 37px;
+      color: $blue;
+    }
+
+    p {
+      margin-top: 14px;
+      font-size: 14px;
+      line-height: 17px;
+      color: $blue;
+      display: flex;
+      align-items: center;
+
+      div {
+        margin-left: 4px;
+      }
+
+      span {
+        width: 18px;
+        height: 18px;
+        margin-right: 12px;
+      }
+    }
+
+    .collapseInfo {
+      position: absolute;
+      left: 0;
+      top: 120px;
+      width: 100%;
+    }
+
+    .collapse {
+      background-color: $blue;
+      padding: 13px 16px;
+      border-radius: 5px;
+
+      & > div {
+        cursor: context-menu;
+      }
+
+      .arrow {
+        background-color: #fff;
+        width: 7px;
+        height: 11px;
+        transition: all 0.2s linear;
+      }
+
+      p {
+        color: #fff;
+        span {
+          background-color: #fff;
+        }
+      }
+    }
+
+    button {
+      font-size: 12px;
+      line-height: 15px;
+      color: #ffffff;
+      padding: 10px 109px;
+      border: none;
+      background-color: $blue;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  }

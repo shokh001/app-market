@@ -1,0 +1,17 @@
+@import 'styles/colors';
+
+.LinksOfPages {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  a {
+    font-size: 14px;
+    line-height: 17px;
+    color: $blue;
+  }
+  span {
+      width: 7px;
+      height: 11px;
+      margin: 0 25px;
+  }
+}

@@ -1,0 +1,112 @@
+@import 'styles/colors.scss';
+
+.navbar {
+  padding-top: 15px;
+  background: rgba(246, 246, 246, 0.86);
+  padding-bottom: 41px;
+  .container {
+    .logo {
+      .inputGroup {
+        margin-left: 100px;
+
+        input {
+          padding: 9px 24px;
+          border: 1px solid $blue;
+          font-size: 14px;
+          line-height: 17px;
+
+          &::placeholder {
+            color: #cfcfcf;
+          }
+        }
+
+        .inputGroupText {
+          background-color: $blue;
+            cursor: pointer;
+
+          .icon {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+
+    .navLeft {
+      a {
+        font-size: 14px;
+        line-height: 17px;
+        color: $blue;
+
+        .badge {
+          position: absolute;
+          left: 11px;
+          top: -13px;
+          font-size: 12px;
+          line-height: 15px;
+          background-color: $light-blue;
+          color: #fff;
+          width: 21px;
+          height: 21px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      .basket {
+        margin: 0 40px;
+      }
+
+      .dropDown {
+        font-size: 15px;
+        line-height: 18px;
+
+        .select {
+          display: flex;
+          align-items: center;
+          color: $blue;
+          cursor: context-menu;
+        }
+
+        .icon_chevronDown {
+          width: 11px;
+          height: 11px;
+          margin-left: 10px;
+          margin-top: 4px;
+        }
+
+        .enter,
+        .account {
+          cursor: pointer;
+          position: absolute;
+          background-color: $blue;
+          font-size: 12px;
+          line-height: 15px;
+          color: #fff;
+          border: 1px solid #fff;
+          width: 109px;
+          height: 35px;
+          align-items: center;
+          justify-content: center;
+          display: none;
+          text-decoration: none;
+        }
+
+        .enter {
+          top: 25px;
+        }
+        .account {
+          top: 60px;
+        }
+      }
+    }
+  }
+}

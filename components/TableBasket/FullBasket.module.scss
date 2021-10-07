@@ -1,0 +1,28 @@
+@import 'styles/colors';
+
+.FullBasket {
+  table {
+    background-color: #fff;
+    width: 1230px;
+    text-align: center;
+    thead {
+      background-color: #1d3783;
+      tr {
+        td {
+          padding: 6px 0;
+          width: 246px;
+          font-size: 14px;
+          line-height: 17px;
+          color: #ffffff;
+          border-right: 1px solid rgba(246, 246, 246, 0.86);
+          &:first-child {
+            width: 522px;
+          }
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

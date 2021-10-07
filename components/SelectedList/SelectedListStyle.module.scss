@@ -1,0 +1,52 @@
+@import "../../styles/globals.scss";
+
+.SelectedListWrapper {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 60px;
+
+    .SelectedListTitle {
+        font-size: 30px;
+        line-height: 37px;
+        color: $blue;
+        margin-bottom: 40px;
+    }
+
+    .SelectedProductsHeader {
+        margin-bottom: 3px;
+
+        .SelectedProductsHeaderLeft {
+            width: 50%;
+            padding: 11px 0;
+            background-color: $blue;
+            border-radius: 5px 5px 0 0;
+            -webkit-border-radius: 5px 0 0 0;
+            -moz-border-radius: 5px 5px 0 0;
+            -ms-border-radius: 5px 5px 0 0;
+            -o-border-radius: 5px 5px 0 0;
+
+            p {
+                font-size: 15px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+        }
+
+        .SelectedProductsHeaderRight {
+            width: 50%;
+            padding: 11px 0;
+            background-color: $blue;
+            border-radius: 0 5px 0 0;
+            -webkit-border-radius: 0 5px 0 0;
+            -moz-border-radius: 0 5px 0 0;
+            -ms-border-radius: 0 5px 0 0;
+            -o-border-radius: 0 5px 0 0;
+
+            p {
+                font-size: 15px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

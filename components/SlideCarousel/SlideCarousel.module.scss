@@ -1,0 +1,57 @@
+@import 'styles/colors';
+
+.banner {
+  background-color: $blue;
+  width: 1250px;
+  height: 412px;
+
+
+  .carouselItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    .caption {
+      margin-right: 100px;
+      .descr {
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 25px;
+      }
+
+      .title {
+        font-size: 29px;
+        line-height: 35px;
+        color: #ffffff;
+        margin-bottom: 25px;
+
+        span {
+          font-weight: 500;
+          font-size: 14.1176px;
+          margin-left: 23px;
+          line-height: 17px;
+        }
+
+        .discount {
+          color: $blue;        
+          display: flex;
+          text-align: center;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          margin-left: 50px;
+
+          width: 75px;
+          height: 75px;
+          background: #ffffff;
+
+          p{
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}

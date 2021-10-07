@@ -1,0 +1,33 @@
+@import 'styles/colors';
+
+.cooperation {
+  .fromWrap {
+    margin-top: 50px;
+  }
+
+  .back {
+    font-size: 14px;
+    line-height: 17px;
+    color: $blue;
+    margin-top: 16px;
+
+    span {
+      width: 18px;
+      height: 18px;
+      margin-right: 15px;
+    }
+  }
+
+  button {
+    padding: 8px 54px;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: $blue;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: 377px;
+  }
+}

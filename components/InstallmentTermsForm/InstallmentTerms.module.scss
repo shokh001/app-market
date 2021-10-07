@@ -1,0 +1,230 @@
+@import 'styles/colors';
+
+.InstallmentTermsForm {
+  width: 777px;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+
+  .buttons {
+
+    .active {
+      background-color: $blue;
+      color: #fff;
+    }
+
+    button {
+      padding: 12px 0;
+      font-size: 14px;
+      line-height: 17px;
+      color: $light-blue;
+      width: 388px;
+      border: none;
+      background-color: #f1f1f1;
+    }
+
+    .yesCard {
+      margin-right: 2px;
+    }
+  }
+
+  .formBody {
+    padding: 44px 82px 84px 18px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 24px;
+      color: $blue;
+      margin-bottom: 0;
+    }
+
+    .line {
+      background: #f1f1f1;
+      height: 1px;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    .boxs {
+      .box {
+        border: 1px solid $light-blue;
+        padding: 18px;
+        border-radius: 5px;
+        transition: all 0.25s linear;
+
+        
+        p {
+          font-size: 14px;
+          line-height: 17px;
+          color: $blue;
+        }
+
+        &:hover {
+          background-color: $blue;
+          border-color: $blue;
+          p {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .inputsCard {
+      margin-top: 35px;
+      label {
+        margin-right: 10px;
+        span {
+          font-size: 14px;
+          line-height: 17px;
+          color: $blue;
+          margin-bottom: 10px;
+        }
+
+        input {
+          border: 1px solid #5085f9;
+          box-sizing: border-box;
+          border-radius: 5px;
+          padding: 9px 0 9px 15px;
+          outline-color: $blue;
+          font-size: 14px;
+          line-height: 17px;
+
+          &::placeholder {
+            color: $blue;
+            opacity: 0.5;
+          }
+        }
+
+        .numberCardInput {
+          width: 300px;
+        }
+
+        .term {
+          width: 105px;
+        }
+      }
+    }
+
+    .personalData {
+      margin-top: 30px;
+
+      .inn {
+        width: 322px;
+      }
+      input {
+        background: #edf1f4;
+        border-radius: 5px;
+        padding: 9px 0px 9px 20px;
+        box-shadow: none;
+        border: none;
+        font-size: 14px;
+        line-height: 17px;
+        outline-color: $blue !important;
+
+        &::placeholder {
+          color: $blue;
+          opacity: 0.5;
+        }
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 15px;
+        color: $blue;
+      }
+
+      button {
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        padding: 7px 48px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .man {
+        background: $light-blue;
+        margin-right: 5px;
+      }
+      .woman {
+        background: $blue;
+      }
+    }
+
+    .passportData {
+      margin-top: 15px;
+      input {
+        background: #edf1f4;
+        border-radius: 5px;
+        padding: 9px 0px 9px 20px;
+        box-shadow: none;
+        border: none;
+        font-size: 14px;
+        line-height: 17px;
+        outline-color: $blue !important;
+        margin-top: 15px;
+
+        &::placeholder {
+          color: $blue;
+          opacity: 0.5;
+        }
+      }
+
+      .inputInfo {
+        width: 322px;
+      }
+
+      .inputSeria {
+        margin-right: 10px;
+        width: 100px;
+      }
+
+      .inputNumber {
+        width: 212px;
+      }
+    }
+
+    .attachFiles {
+        margin-top: 30px;
+      .descrInfo {
+        padding-left: 35px;
+      }
+      .number {
+        position: absolute;
+        left: 13px;
+        top: 4px;
+        width: 13px;
+        height: 13px;
+        border: 0.5px solid $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 7.5px;
+        border-radius: 50%;
+        line-height: 9px;
+      }
+      h4 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 3px;
+        color: $blue;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        color: #c5c5c5;
+      }
+
+      button {
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        padding: 10px 24px;
+        border: none;
+        background: linear-gradient(0deg, $blue, $blue), $light-blue;
+        border-radius: 5px;
+        margin-right: 21px;
+      }
+    }
+  }
+}

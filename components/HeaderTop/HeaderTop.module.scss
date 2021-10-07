@@ -1,0 +1,67 @@
+@import 'styles/colors.scss';
+
+.headerTop {
+  background-color: #fff;
+  padding: 17px 0;
+
+  .container {
+    .dropDown {
+      font-size: 15px;
+      line-height: 18px;
+
+      .select {
+        display: flex;
+        align-items: center;
+        color: $blue;
+        cursor: context-menu;
+      }
+
+      .icon_chevronDown {
+        width: 11px;
+        height: 11px;
+        margin-left: 10px;
+        margin-top: 4px;
+      }
+
+      .russian,
+      .uzbek {
+        cursor: pointer;
+        position: absolute;
+        background-color: $blue;
+        font-size: 12px;
+        line-height: 15px;
+        color: #fff;
+        border: 1px solid #fff;
+        width: 109px;
+        height: 35px;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        z-index: 3;
+      }
+
+      .russian {
+        top: 25px;
+      }
+      .uzbek {
+        top: 60px;
+        border-bottom: none;
+      }
+    }
+
+    .group {
+      margin: 0 67px;
+    }
+
+    a {
+      color: $blue;
+      font-size: 15px;
+      line-height: 18px;
+
+      .icon {
+        margin-right: 10px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+}

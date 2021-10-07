@@ -1,0 +1,70 @@
+@import "../../styles//globals.scss";
+
+@mixin text($fS, $lH, $cL, $cP, $mR, $mB) {
+    font-size: $fS;
+    line-height: $lH;
+    color: $cL;
+    cursor: $cP;
+    margin-right: $mR;
+    margin-bottom: $mB;
+}
+
+.basketSectionWrapper {
+    margin-top: 50px;
+    .basketSectionHeader {
+        margin-bottom: 96px;
+
+        p {
+            @include text(14px, 17px, $blue, pointer, 22px, 0px);
+        }
+
+        img {
+            margin-right: 22px;
+        }
+
+        span {
+            @include text(14px, 17px, $blue, pointer, 0px, 0px);
+        }
+    }
+
+    .basketSectionBody {
+        .basketImg {
+            width: 704px;
+            height: 698px;
+            margin-right: 173px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+
+        .basketContent {
+            margin-top: 200px;
+
+            h2 {
+                @include text(24px, 29px, $blue, default, 0px, 10px);
+            }
+
+            p {
+                @include text(16px, 20px, $blue, default, 0px, 20px);
+            }
+
+            button {
+                text-align: center;
+                padding: 9px 0;
+                width: 149px;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                background-color: $blue;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+        }
+    }
+}

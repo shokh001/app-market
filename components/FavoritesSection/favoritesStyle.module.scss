@@ -1,0 +1,41 @@
+@import '../../styles//globals.scss';
+
+.favoritesSectionWrap{
+     padding: 101px 0 405px 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     img{
+          margin-right: 75px;
+          max-width: 100%;
+          height: auto;
+     }
+
+     .favoritesContent{
+          width: 100%;
+          max-width: 503px;
+
+          .favoritesTitle{
+               font-size: 24px;
+               line-height: 29px;
+               color: $blue;
+               margin-bottom: 17px;
+          }
+          .favoritesText{
+               font-size: 18px;
+               line-height: 22px;
+               color: $blue;
+               margin-bottom: 25px;
+          }
+          .favoritesBtn{
+               font-size: 18px;
+               line-height: 22px;
+               color: #FFFFFF;
+               padding: 15px 30px;
+               border: none;
+               background-color: $blue;
+               border-radius: 5px;
+          }
+     }
+}

@@ -1,0 +1,144 @@
+@import 'styles/colors';
+
+.MyOrdersCard {
+  h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 37px;
+    color: $blue;
+  }
+
+  .card {
+    background: #ffffff;
+    border: 1px solid rgba(33, 59, 133, 0.4);
+    border-radius: 5px;
+    display: flex;
+    padding: 30px 40px;
+
+    .product {
+      display: flex;
+      img {
+        width: 79px;
+        height: 70px;
+      }
+
+      ul {
+        list-style: none;
+        li {
+          font-size: 14px;
+          line-height: 17px;
+          color: $blue;
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .productPrice {
+      margin-left: 220px;
+      h3 {
+        font-size: 25px;
+        line-height: 30px;
+        color: $blue;
+        margin-bottom: 0;
+      }
+
+      button {
+        background: #0eaf00;
+        border: none;
+        margin-top: 10px;
+        width: 189px;
+        height: 33px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .cardInfo {
+    padding: 40px 36px 40px 20px;
+    background: #ffffff;
+    border: 0.5px solid #d0d0d0;
+    border-radius: 5px;
+    .cardHeader {
+      display: flex;
+      align-items: center;
+
+      button {
+        border: none;
+        background: $blue;
+        padding: 10px 75px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+
+        span {
+          width: 20px;
+          height: 20px;
+          background-color: #ffffff;
+          margin-right: 10px;
+          margin-bottom: 5px;
+        }
+      }
+
+      h4 {
+        font-size: 24px;
+        line-height: 29px;
+        color: $blue;
+        margin-right: 422px;
+      }
+    }
+  }
+
+  .cardBody {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .product {
+      width: 468px;
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #ececec;
+
+      &:last-child{
+        border: none;
+      }
+
+      img {
+        width: 67px;
+        height: 60px;
+      }
+      h3 {
+        font-size: 18px;
+        line-height: 22px;
+        color: $blue;
+        margin-bottom: 0;
+        margin-left: 15px;
+      }
+    }
+
+    ul {
+      background: #f1f1f1;
+      padding: 22px 30px;
+      list-style: none;
+
+      li {
+        margin: 7px 0;
+        font-size: 14px;
+        line-height: 17px;
+        color: $blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import "../../../styles//globals.scss";
+
+@mixin generalTextStyle($fontS, $lineH, $Cl, $marginR) {
+    font-size: $fontS;
+    line-height: $lineH;
+    color: $Cl;
+    margin-right: $marginR;
+}
+
+.SelectedItemBox {
+    width: 100%;
+    padding: 26px 232px 26px 72px;
+    background-color: #fff;
+    position: relative;
+
+    &:not(:last-child) {
+        border-bottom: 2px solid #f6f6f6;
+    }
+
+    .SelectedItemBoxLeft {
+        .productImg {
+            width: 114px;
+            height: 118.56px;
+            object-fit: cover;
+            object-position: center;
+            margin-right: 60px;
+        }
+
+        .productName {
+            @include generalTextStyle(15px, 18px, $blue, 60px);
+        }
+
+        .seeBtn {
+            display: block;
+            border: none;
+            padding: 11px 28px;
+            font-size: 12px;
+            line-height: 15px;
+            color: #6C6C6C;
+            background: #EDF1F4;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.25s linear;
+            -webkit-transition: all 0.25s linear;
+            -moz-transition: all 0.25s linear;
+            -ms-transition: all 0.25s linear;
+            -o-transition: all 0.25s linear;
+
+            .egeIcon {
+                width: 14px;
+                height: 9.55px;
+                margin-left: 10px;
+            }
+
+            &:hover {
+                color: #fff;
+                background-color: $blue;
+
+                .egeIcon {
+                    width: 14px;
+                    height: 9.55px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    .SelectedItemBoxRight {
+        .productMoney {
+            @include generalTextStyle(15px, 18px, $blue, 48px);
+        }
+
+        .shopCartImgWrap {
+            width: 40px;
+            height: 40px;
+            display: block;
+            background-color: $blue;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            cursor: pointer;
+
+            .shopCartImg {
+                width: 20px;
+                height: 20px;
+                display: block;
+                background-color: #fff;
+                margin-bottom: 3px;
+            }
+        }
+
+        .deleteBtn {
+            width: 15.44px;
+            height: 19px;
+            cursor: pointer;
+            position: absolute;
+            top: 9px;
+            right: 12px;
+        }
+    }
+}

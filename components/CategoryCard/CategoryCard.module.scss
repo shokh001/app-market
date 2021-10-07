@@ -1,0 +1,68 @@
+@import 'styles/colors';
+
+.CategoryCard {
+  width: 380px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px 9px 65px 30px;
+  position: relative;
+  margin-right: 50px;
+  margin-top: 25px;
+
+  &:first-child{
+    margin-top: 0;
+  }
+
+  &::after{
+      content: '';
+      display: block;
+      width: 1px;
+      height: 100%;
+      background-color: #EBEBEB;
+      position: absolute;
+      right: 11px;
+      top: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue;
+    margin-bottom: 22px;
+  }
+
+  ul {
+
+    .active {
+        border-right: 3px solid $light-blue;
+
+        span {
+            background-color: $light-blue;
+            border-color: $light-blue;
+        }
+    }
+    li {
+        position: relative;
+        z-index: 3;
+
+      a {
+        // display: flex;
+        // align-items: center;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 5px 0;
+        color: $blue;
+        text-decoration: none;        
+
+        span {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            border: 1px solid $blue;
+            margin-right: 10px;
+          }
+      }      
+    }
+  }
+}

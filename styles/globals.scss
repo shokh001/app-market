@@ -1,0 +1,432 @@
+@import 'colors';
+
+/********************** FONTS STYLE ****************/
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../public/assets/fonts/Montserrat/Montserrat-Bold.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../public/assets/fonts/Montserrat/Montserrat-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../public/assets/fonts/Montserrat/Montserrat-Light.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../public/assets/fonts/Montserrat/Montserrat-Medium.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../public/assets/fonts/Montserrat/Montserrat-SemiBold.ttf')
+    format('truetype');
+}
+
+.font-montserrat-bold {
+  font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.font-montserrat-regular {
+  font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.font-montserrat-light {
+  font-family: 'Montserrat-Light', sans-serif;
+}
+
+.font-montserrat-medium {
+  font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.font-montserrat-semi-bold {
+  font-family: 'Montserrat-SemiBold', sans-serif;
+}
+
+/********************** ICONS STYLE ************/
+
+.icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+
+  background-color: $blue;
+
+  &.icon-phone {
+    mask-image: url('../public/assets/icons/phone.svg');
+    -webkit-mask-image: url('../public/assets/icons/phone.svg');
+  }
+  &.icon-calendar {
+    mask-image: url('../public/assets/icons/calendar.svg');
+    -webkit-mask-image: url('../public/assets/icons/calendar.svg');
+  }
+  &.icon-passport {
+    mask-image: url('../public/assets/icons/passport.svg');
+    -webkit-mask-image: url('../public/assets/icons/passport.svg');
+  }
+  &.icon-logout {
+    mask-image: url('../public/assets/icons/logout.svg');
+    -webkit-mask-image: url('../public/assets/icons/logout.svg');
+  }
+  &.icon-notebook {
+    mask-image: url('../public/assets/icons/notebook.svg');
+    -webkit-mask-image: url('../public/assets/icons/notebook.svg');
+  }
+  &.icon-paint {
+    mask-image: url('../public/assets/icons/paint.svg');
+    -webkit-mask-image: url('../public/assets/icons/paint.svg');
+  }
+  &.icon-car {
+    mask-image: url('../public/assets/icons/car.svg');
+    -webkit-mask-image: url('../public/assets/icons/car.svg');
+  }
+  &.icon-home {
+    mask-image: url('../public/assets/icons/home.svg');
+    -webkit-mask-image: url('../public/assets/icons/home.svg');
+  }
+  &.icon-couch {
+    mask-image: url('../public/assets/icons/couch.svg');
+    -webkit-mask-image: url('../public/assets/icons/couch.svg');
+  }
+  &.icon-casual-t-shirt {
+    mask-image: url('../public/assets/icons/casual-t-shirt.svg');
+    -webkit-mask-image: url('../public/assets/icons/casual-t-shirt.svg');
+  }
+  &.icon-washing-machine {
+    mask-image: url('../public/assets/icons/washing-machine.svg');
+    -webkit-mask-image: url('../public/assets/icons/washing-machine.svg');
+  }
+  &.icon-group {
+    mask-image: url('../public/assets/icons/group.svg');
+    -webkit-mask-image: url('../public/assets/icons/group.svg');
+  }
+  &.icon-trolley {
+    mask-image: url('../public/assets/icons/trolley.svg');
+    -webkit-mask-image: url('../public/assets/icons/trolley.svg');
+  }
+  &.icon-chevronDown {
+    mask-image: url('../public/assets/icons/chevron-down.svg');
+    -webkit-mask-image: url('../public/assets/icons/chevron-down.svg');
+  }
+  &.icon-heart {
+    mask-image: url('../public/assets/icons/heart.svg');
+    -webkit-mask-image: url('../public/assets/icons/heart.svg');
+  }
+  &.icon-search {
+    mask-image: url('../public/assets/icons/search.svg');
+    -webkit-mask-image: url('../public/assets/icons/search.svg');
+  }
+  &.icon-profile {
+    mask-image: url('../public/assets/icons/profile-user.svg');
+    -webkit-mask-image: url('../public/assets/icons/profile-user.svg');
+  }
+  &.icon-burgerMenu {
+    mask-image: url('../public/assets/icons/burger-menu.svg');
+    -webkit-mask-image: url('../public/assets/icons/burger-menu.svg');
+  }
+  &.icon-arrowleft {
+    mask-image: url('../public/assets/icons/arrow-left.svg');
+    -webkit-mask-image: url('../public/assets/icons/arrow-left.svg');
+  }
+  &.icon-arrowRight {
+    mask-image: url('../public/assets/icons/arrow-right.svg');
+    -webkit-mask-image: url('../public/assets/icons/arrow-right.svg');
+  }
+  &.icon-ege {
+    mask-image: url('../public/assets/icons/ege.svg');
+    -webkit-mask-image: url('../public/assets/icons/ege.svg');
+  }
+  &.icon-check {
+    mask-image: url('../public/assets/icons/check.svg');
+    -webkit-mask-image: url('../public/assets/icons/check.svg');
+  }
+  &.icon-cirgle {
+    mask-image: url('../public/assets/icons/cirgle.svg');
+    -webkit-mask-image: url('../public/assets/icons/cirgle.svg');
+  }
+  &.icon-back {
+    mask-image: url('../public/assets/icons/back.svg');
+    -webkit-mask-image: url('../public/assets/icons/back.svg');
+  }
+  &.icon-add {
+    mask-image: url('../public/assets/icons/add.svg');
+    -webkit-mask-image: url('../public/assets/icons/add.svg');
+  }
+  &.icon-minus {
+    mask-image: url('../public/assets/icons/minus.svg');
+    -webkit-mask-image: url('../public/assets/icons/minus.svg');
+  }
+  &.icon-refresh {
+    mask-image: url('../public/assets/icons/refresh.svg');
+    -webkit-mask-image: url('../public/assets/icons/refresh.svg');
+  }
+  &.icon-close {
+    mask-image: url('../public/assets/icons/close.svg');
+    -webkit-mask-image: url('../public/assets/icons/close.svg');
+  }
+  &.icon-truck {
+    mask-image: url('../public/assets/icons/truck.svg');
+    -webkit-mask-image: url('../public/assets/icons/truck.svg');
+  }
+  &.icon-user {
+    mask-image: url('../public/assets/icons/user.svg');
+    -webkit-mask-image: url('../public/assets/icons/user.svg');
+  }
+  &.icon-docs {
+    mask-image: url('../public/assets/icons/docs.svg');
+    -webkit-mask-image: url('../public/assets/icons/docs.svg');
+  }
+  &.icon-delete {
+    mask-image: url('../public/assets/icons/delete-icon.svg');
+    -webkit-mask-image: url('../public/assets/icons/delete-icon.svg');
+  }
+  &.icon-credit-card {
+    mask-image: url('../public/assets/icons/credit-card.svg');
+    -webkit-mask-image: url('../public/assets/icons/credit-card.svg');
+  }
+  &.icon-phone-call {
+    mask-image: url('../public/assets/icons/phone-call.svg');
+    -webkit-mask-image: url('../public/assets/icons/phone-call.svg');
+  }
+  &.icon-paper-clip {
+    mask-image: url('../public/assets/icons/paper-clip.svg');
+    -webkit-mask-image: url('../public/assets/icons/paper-clip.svg');
+  }
+  &.icon-location {
+    mask-image: url('../public/assets/icons/location.svg');
+    -webkit-mask-image: url('../public/assets/icons/location.svg');
+  }
+
+  &.icon-electronics {
+    mask-image: url('../public/assets/icons/electronics.svg');
+    -webkit-mask-image: url('../public/assets/icons/electronics.svg');
+  }
+  &.icon-washer {
+    mask-image: url('../public/assets/icons/washer.svg');
+    -webkit-mask-image: url('../public/assets/icons/washer.svg');
+  }
+}
+
+.container {
+  max-width: 1720px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.main {
+  background: rgba(246, 246, 246, 0.86);  
+  padding-bottom: 90px;
+}
+
+// body {
+//   background: rgba(246, 246, 246, 0.86);  
+// }
+
+/*******************Banner Carousel Styles*********************/
+
+.slideCasousel {
+  .slick-arrow {
+    border: 3px solid #f6f6f6 !important;
+  }
+  .slick-dots {
+    bottom: 8px;
+
+    li {
+      margin: 0;
+      button {
+        &::before {
+          opacity: 1;
+          color: #fff !important;
+          font-size: 8px;
+        }
+      }
+    }
+
+    .slick-active {
+      button {
+        &::before {
+          opacity: 1;
+          color: $light-blue !important;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+/******************Product Carousel Styles**********************/
+
+.slick-arrow {
+  width: 50px !important;
+  height: 50px !important;
+  background-color: $blue !important;
+  border-radius: 50%;
+  z-index: 3;
+  border: 2px solid #f6f6f6 !important;
+}
+
+.slick-prev {
+  &::before {
+    content: url(../public/assets/icons/arrow-left.svg) !important;
+    opacity: 1 !important;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.slick-next {
+  &::before {
+    content: url(../public/assets/icons/arrow-right.svg) !important;
+    opacity: 1 !important;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/******************Mini Carousel Card Styles**********************/
+
+.miniCarouselCard {
+  .slick-arrow {
+    width: 50px !important;
+    height: 50px !important;
+    background-color: transparent !important;
+    border: none !important;
+  }
+
+  .slick-prev {
+    top: 105% !important;
+    left: -36px;
+    &::before {
+      content: url(../public/assets/icons/right-blue.svg) !important;
+    }
+  }
+
+  .slick-next {
+    right: -36px;
+    top: 105%;
+    &::before {
+      content: url(../public/assets/icons/right-blue_2.svg) !important;
+    }
+  }
+}
+
+/************************Modal Setting**********************/
+
+.react-responsive-modal-overlay {
+  background-color: rgba(29, 55, 131, 0.76) !important;
+}
+
+.react-responsive-modal-modal {
+  max-width: 1008px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: none;
+  .modal-wrapper {
+    padding: 50px 60px;
+    img {
+      width: 100%;
+    }
+    .modal-title {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: $blue;
+      margin-bottom: 13px;
+    }
+    .modal-text {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .modul-content__btn {
+      padding: 13px 81px;
+      display: block;
+      margin: 0 auto;
+      font-size: 12px;
+      line-height: 83.4%;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      background-color: $blue;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+  }
+}
+
+/**************************Pagination Styles***************************/
+
+.paginationWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-item {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-link {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  color: #727272;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid $blue;
+  user-select: none;
+}
+
+.arrow-left {
+  margin-right: 18px;
+  font-size: 24px;
+  user-select: none;
+  color: $blue;
+}
+.arrow-right {
+  font-size: 24px;
+  margin-left: 18px;
+  user-select: none;
+  color: $blue;
+}
+
+.arrowLeft-link,
+.arrowRight-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $blue;
+}
+
+.pagination-item.active .pagination-link {
+  background-color: $blue;
+  border: 1px solid $blue;
+  color: #fff;
+}
