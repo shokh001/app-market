@@ -36,10 +36,10 @@ const PickUpForm = () => {
                         <div onClick={() => setCheck(2)} className="d-flex align-items-center">
                             <div className={styles.check}>
                                 {
-                                    check === 2 && <span className='icon icon-check'></span>
+                                    check === 2 && <span className="icon icon-check"></span>
                                 }
                             </div>
-                            <span>ТРЦ "Mega Planet" - Юнусабадский район, ул. А. Дониша, дом № 2-Б</span>
+                            <span>ТРЦ Mega Planet - Юнусабадский район, ул. А. Дониша, дом № 2-Б</span>
                         </div>
                     </li>
                     <li className='d-flex align-items-center'>
