@@ -206,16 +206,16 @@ const ProductDetails = () => {
 
                 <div className={styles.chooseMec}>
                     <p onClick={() => setActiveMec(1)} className='mb-0 font-montserrat-regular'>
-                        <span className={activeMec === 1 && styles.active}></span> 3 мес
+                        <span className={activeMec === 1? styles.active : ''}></span> 3 мес
                     </p>
                     <p onClick={() => setActiveMec(2)} className='mb-0 font-montserrat-regular'>
-                        <span className={activeMec === 2 && styles.active}></span> 6 мес
+                        <span className={activeMec === 2? styles.active : ''}></span> 6 мес
                     </p>
                     <p onClick={() => setActiveMec(3)} className='mb-0 font-montserrat-regular'>
-                        <span className={activeMec === 3 && styles.active}></span> 9 мес
+                        <span className={activeMec === 3? styles.active : ''}></span> 9 мес
                     </p>
                     <p onClick={() => setActiveMec(4)} className='mb-0 font-montserrat-regular'>
-                        <span className={activeMec === 4 && styles.active}></span> 12 мес
+                        <span className={activeMec === 4? styles.active : ''}></span> 12 мес
                     </p>
                 </div>
 

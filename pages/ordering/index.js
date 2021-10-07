@@ -15,8 +15,8 @@ const Index = () => {
 
             <div className='container'>
                 <div className={styles.actionButtons + ' font-montserrat-regular'}>
-                    <button type='button' onClick={() => setSelectedForm(true)} className={selectedForm && styles.activeButton}>Доставка</button>
-                    <button type='button' onClick={() => setSelectedForm(false)} className={!selectedForm && styles.activeButton}>Самовывоз</button>
+                    <button type='button' onClick={() => setSelectedForm(true)} className={selectedForm? styles.activeButton : ''}>Доставка</button>
+                    <button type='button' onClick={() => setSelectedForm(false)} className={!selectedForm? styles.activeButton : ''}>Самовывоз</button>
                 </div>
             </div>
 
