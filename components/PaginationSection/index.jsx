@@ -45,7 +45,7 @@ const LibraryPagination = () => {
       <div className={styles.paginationWrapper}>
         {items.map((item) => {
           return (
-            <div className={styles.ProductCard}>
+            <div key={item.id} className={styles.ProductCard}>
               <div className={styles.cardHeader}>
                 <p className="mb-0 font-montserrat-regular">
                   <span></span> В рассрочку
