@@ -21,8 +21,8 @@ const Index = () => {
             </div>
 
             <div className={styles.formsWarp + ' d-flex container'}>
-                {/* {selectedForm ?
-                    <FillTheFormSection /> : <PickUpForm />} */}
+                {selectedForm ?
+                    <FillTheFormSection /> : <PickUpForm />}
                 <YourOrderSection />
             </div>
 
