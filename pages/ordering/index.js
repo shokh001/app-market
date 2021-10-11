@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import FillTheFormSection from '../../components/FillTheFormSection'
 import YourOrderSection from '../../components/YourOrderSection'
-import PickUpForm from '../../components/PickUpForm'
+import PickUpForm from '../../components/PickupForm'
 import styles from './ordering.module.scss'
 import LinksOfPages from '../../components/LinksOfPages'
 
@@ -21,8 +21,8 @@ const Index = () => {
             </div>
 
             <div className={styles.formsWarp + ' d-flex container'}>
-                {selectedForm ?
-                    <FillTheFormSection /> : <PickUpForm />}
+                {/* {selectedForm ?
+                    <FillTheFormSection /> : <PickUpForm />} */}
                 <YourOrderSection />
             </div>
 
