@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import styles from './Category.module.scss'
 import DepartmentOfElectronics from '../DepartmentOfElectronics';
@@ -21,13 +21,9 @@ const Category = () => {
         setIsOpen(true)
     }
 
-    // useEffect(() => {
-    //     window.onclick = function (e) {
-    //         if (!((e.clientX >= 55 && e.clientX <= 152) && (e.clientY >= 213 && e.clientY <= 229))) {
-    //             setIsOpen(false)
-    //         }
-    //     };
-    // }, [])
+    const onClose = (e) => {
+        setIsOpen(false)
+    }
 
     const dataSections = [
         {
@@ -115,32 +111,41 @@ const Category = () => {
 
     return (
         <div style={{ background: isOpen && '#1D3783', padding: isOpen && '13px 0' }} className={styles.category}>
+            {
+                isOpen &&
+                <div
+                    style={{ height: document.body.scrollHeight, zIndex: isOpen ? '4' : '-1' }}
+                    className={styles.menuList}
+                    onClick={() => onClose()}
+                >
+                    <div
+                        className={styles.content}
+                        onClick={e => {
+                            e.stopPropagation();
+                        }}
+                    >
+                        <div className="container d-flex align-items-start">
+                            <ul className={styles.parts}>
+                                {
+                                    dataSections.map((value) =>
+                                        <li key={value.id} onClick={() => setActivePart(value.id)} className={activePart === value.id ? styles.activeLI + ' font-montserrat-regular' : 'font-montserrat-regular'}>
+                                            <div>
+                                                <span className={value.icon}></span>
+                                                {value.title}
+                                            </div>
+                                            <span className='icon icon-arrowRight'></span>
+                                        </li>)
+                                }
+                            </ul>
 
-            <div
-                style={{ opacity: isOpen ? '1' : '0', zIndex: isOpen ? '4' : '-1' }}
-                className={styles.menuList}
-            >
-                <div className="container d-flex align-items-start">
-                    <ul className={styles.parts}>
-                        {
-                            dataSections.map((value) =>
-                                <li key={value.id} onClick={() => setActivePart(value.id)} className={activePart === value.id ? styles.activeLI + ' font-montserrat-regular' : 'font-montserrat-regular'}>
-                                    <div>
-                                        <span className={value.icon}></span>
-                                        {value.title}
-                                    </div>
-                                    <span className='icon icon-arrowRight'></span>
-                                </li>)
-                        }
-                    </ul>
-
-                    <div className={styles.info}>
-                        {
-                            getComponent()
-                        }
+                            <div className={styles.info}>
+                                {
+                                    getComponent()
+                                }
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </div>}
 
             <div className={styles.container + " container d-flex align-items-center"}>
 
@@ -159,7 +164,7 @@ const Category = () => {
                         </>)
                         :
                         <div
-                            onClick={() => setIsOpen(false)}
+                            onClick={(e) => onClose(e)}
                             className={styles.menu + ' d-flex align-items-center font-montserrat-bold'}
                         >
                             <span className={styles.icon + ' icon icon-close bg-white'}></span>
