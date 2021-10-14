@@ -110,11 +110,12 @@ const Category = () => {
     }
 
     return (
-        <div style={{ background: isOpen && '#1D3783', padding: isOpen && '13px 0' }} className={styles.category}>
+        <div style={{background: isOpen && '#1D3783', padding: isOpen && '13px 0' }} className={styles.category}>
+
             {
                 isOpen &&
                 <div
-                    style={{ height: document.body.scrollHeight, zIndex: isOpen ? '4' : '-1' }}
+                    style={{ height: document.body.scrollHeight, opacity: isOpen ? '1' : '0', zIndex: isOpen ? '4' : '-1' }}
                     className={styles.menuList}
                     onClick={() => onClose()}
                 >
@@ -164,7 +165,7 @@ const Category = () => {
                         </>)
                         :
                         <div
-                            onClick={(e) => onClose(e)}
+                            onClick={() => onClose()}
                             className={styles.menu + ' d-flex align-items-center font-montserrat-bold'}
                         >
                             <span className={styles.icon + ' icon icon-close bg-white'}></span>
@@ -175,7 +176,7 @@ const Category = () => {
 
 
                 {
-                    !isOpen && <div className={styles.categories + ""}>
+                    !isOpen && <div className={styles.categories}>
                         <ul className='list-unstyled d-flex align-items-center mb-0'>
                             {
                                 dataCategories.map((value) =>

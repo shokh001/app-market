@@ -11,7 +11,7 @@ const CategoryCard = ({ data, title }) => {
             <ul className='list-unstyled'>
                 {
                     data.map((value) =>
-                        <li key={value.id} onClick={() => setActiveLi(value.id)} className={activeLi === value.id? styles.active : ''}>
+                        <li key={value.id} onClick={() => setActiveLi(value.id)} className={activeLi === value.id? styles.active: ''}>
                             <Link href="#">
                                 <a className='font-montserrat-regular'>
                                     <span></span>

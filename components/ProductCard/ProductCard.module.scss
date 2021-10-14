@@ -2,63 +2,64 @@
 
 .ProductCard {
   padding-bottom: 22px;
-  background: #FFFFFF;
+  text-decoration: none;
+  background: #ffffff;
   opacity: 0.9;
   position: relative;
   border-radius: 6.27562px;
   margin: 0 5px;
   transition: all 0.25s linear;
+  display: inline-block;  
 
   &:hover {
-    box-shadow: 0px 0px 10.5038px rgba(0, 0, 0, 0.25);  
+    box-shadow: 0px 0px 10.5038px rgba(0, 0, 0, 0.25);
     background-color: $light-blue;
 
     .cardHeader {
-      
-        .favourite {
-            background-color: #fff;
-            span {
-              background-color: $light-blue;
+      .favourite {
+        background-color: #fff;
+        span {
+          background-color: $light-blue;
+        }
+        .toltip {
+          background-color: #fff;
+          p {
+            color: $light-blue;
+            &::after {
+              border-left: 13px solid #fff;
             }
-            .toltip {
-                background-color: #fff;
-                p {
-                  color: $light-blue;
-                    &::after {
-                        border-left: 13px solid #fff;
-                    }
-                }
-            }
-        }        
+          }
+        }
+      }
     }
 
     .cardBody {
-        .deleteSum {
-            opacity: 0;
-        }
-        h4,h5{
-          color: #fff;
-        }
+      .deleteSum {
+        opacity: 0;
+      }
+      h4,
+      h5 {
+        color: #fff;
+      }
     }
 
     .trolley {
-        opacity: 1;
+      opacity: 1;
     }
 
     p {
       color: #fff;
     }
-    .trolley{
+    .trolley {
       background-color: #fff;
 
       span {
         background-color: $light-blue;
       }
     }
-    .trolleyIcon{
+    .trolleyIcon {
       background-color: $light-blue;
     }
-
   }
 
   .cardHeader {
@@ -139,28 +140,27 @@
   }
 
   .trolley {
-      cursor: pointer;
+    cursor: pointer;
     position: absolute;
     bottom: 10px;
     right: 10px;
     background-color: $light-blue;
     padding: 12px 15px 10px 12px;
     border-radius: 50%;
-    opacity: 0;    
+    opacity: 0;
     z-index: 3;
 
     span {
-        background-color: #fff;
+      background-color: #fff;
     }
-}
-
+  }
 
   .cardBody {
     padding: 0 20px;
     text-align: center;
     position: relative;
     margin-top: 20px;
-    
+
     .discount {
       color: #fff;
       display: flex;
@@ -174,7 +174,7 @@
       margin-right: 80px;
       position: absolute;
       left: 8px;
-    top: -22px;
+      top: -22px;
 
       span {
         font-size: 10px;
@@ -210,27 +210,27 @@
   }
 }
 
-.paginationWrapper{
+.paginationWrapper {
   width: 1134px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   margin-bottom: 57px;
 
-  .ProductCard{
-    
-    &:hover{
-      p,h4,h5{
+  .ProductCard {
+    &:hover {
+      p,
+      h4,
+      h5 {
         color: #fff;
       }
-      .trolley{
+      .trolley {
         background-color: #fff;
       }
-      .trolleyIcon{
+      .trolleyIcon {
         background-color: $light-blue;
       }
       background-color: $light-blue;
     }
   }
 }
-

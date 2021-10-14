@@ -4,7 +4,6 @@
   padding-bottom: 9px;
   background: rgba(246, 246, 246, 0.86);
   padding-top: 9px;
-  // position: relative;
 
   .menuList {
     position: absolute;
@@ -15,7 +14,7 @@
     transition: all 0.3s linear;
     background-color: transparent;
     padding-top: 244px;
-    
+
     .content {
       background-color: #fff;  
       width: 100%;
@@ -36,7 +35,7 @@
       margin-bottom: 68px;
 
       li {
-        cursor: context-menu;
+        cursor: pointer;
         width: 243px;
         padding: 13px 10px;
         display: flex;
@@ -89,6 +88,8 @@
       line-height: 17px;
       color: $blue;
       cursor: pointer;
+      position: relative;
+      z-index: 5;
 
       .icon {
         width: 15px;

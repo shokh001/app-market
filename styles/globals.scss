@@ -220,6 +220,10 @@
     mask-image: url('../public/assets/icons/washer.svg');
     -webkit-mask-image: url('../public/assets/icons/washer.svg');
   }
+  &.icon-triangle {
+    mask-image: url('../public/assets/icons/triangle.svg');
+    -webkit-mask-image: url('../public/assets/icons/triangle.svg');
+  }
 }
 
 .container {
@@ -233,9 +237,6 @@
   padding-bottom: 90px;
 }
 
-// body {
-//   background: rgba(246, 246, 246, 0.86);  
-// }
 
 /*******************Banner Carousel Styles*********************/
 

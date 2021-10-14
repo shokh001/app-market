@@ -57,7 +57,9 @@ const Navbar = () => {
                         <Link href='/login'>
                             <a onClick={() => choose()} className={select ? styles.enter + ' font-montserrat-regular d-flex' : styles.enter + ' font-montserrat-regular'}>Войти</a>
                         </Link>
-                        <div onClick={() => choose()} className={select ? styles.account + ' font-montserrat-regular d-flex' : styles.account + ' font-montserrat-regular'}>Создать аккаунт</div>
+                        <Link href='/create_account'>
+                        <a onClick={() => choose()} className={select ? styles.account + ' font-montserrat-regular d-flex' : styles.account + ' font-montserrat-regular'}>Создать аккаунт</a>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Link from 'next/link'
 import styles from './ProductDetails.module.scss'
 
 const ProductDetails = () => {
@@ -54,7 +55,9 @@ const ProductDetails = () => {
                 </p>
 
                 <div className='d-flex align-items-center'>
-                    <button type='button' className={styles.buyNowBtn + ' font-montserrat-regular'}>Купить сразу</button>
+                    <Link href='/ordering'>
+                        <a className={styles.buyNowBtn + ' font-montserrat-regular'}>Купить сразу</a>
+                    </Link>
                     <div className={styles.counter}>
                         <button onClick={() => decriment()} type='button'>
                             <span className='icon icon-minus'></span>
@@ -221,7 +224,9 @@ const ProductDetails = () => {
 
                 <p className={styles.cost + ' font-monserrat-bold'}>2 000 000 сум</p>
 
-                <button type='button' className={styles.btn}>Купить в рассрочку</button>
+                <Link href='/installment_terms'>
+                    <a className={styles.btn}>Купить в рассрочку</a>
+                </Link>
             </div>
         </div>
     )

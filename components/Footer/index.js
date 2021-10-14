@@ -31,10 +31,10 @@ const Footer = () => {
           <div className={styles.footerLinks}>
             <ul>
               <li>
-                <Link  href="/about">
-                <a className="font-montserrat-medium">
-                  О нас
-                </a>
+                <Link href="/about">
+                  <a className="font-montserrat-medium">
+                    О нас
+                  </a>
                 </Link>
               </li>
               <li>
@@ -55,15 +55,17 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.footerCenterRight}>
-            <a href="#" className="font-montserrat-semi-bold">
-              <img
-                src="../assets/icons/market.svg"
-                alt="Market"
-                width="17"
-                height="17"
-              />
-              Магазины
-            </a>
+            <Link href="/shop">
+              <a className="font-montserrat-semi-bold">
+                <img
+                  src="../assets/icons/market.svg"
+                  alt="Market"
+                  width="17"
+                  height="17"
+                />
+                Магазины
+              </a>
+            </Link>
             <a href="#" className="font-montserrat-semi-bold">
               <img
                 src="../assets/icons/entrance.svg"
@@ -75,11 +77,13 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className={styles.footerRight}>
-          <button type="button" className={styles.footerBtn}>
-            В каталог
-          </button>
-        </div>
+        <Link href='/catalog'>
+          <a className={styles.footerRight}>
+            <button type="button" className={styles.footerBtn}>
+              В каталог
+            </button>
+          </a>
+        </Link>
       </div>
       <p className={styles.footerBottom + " font-montserrat-medium"}>
         2020 © Byshop. uz

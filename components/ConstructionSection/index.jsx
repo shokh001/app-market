@@ -27,7 +27,7 @@ const ConstructionSection = ({setIsOpen}) => {
                                 </Link>
                                 <ul>
                                     <li>
-                                        <Link href="#">
+                                        <Link href="/product">
                                             <a onClick={()=>setIsOpen(false)} className='font-montserrat-regular'>{value.link_1}</a>
                                         </Link>
                                     </li>

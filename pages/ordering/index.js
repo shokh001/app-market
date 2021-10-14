@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import FillTheFormSection from '../../components/FillTheFormSection'
 import YourOrderSection from '../../components/YourOrderSection'
-import PickUpForm from '../../components/PickupForm'
+import PickUpForm from '../../components/PickUpForm'
 import styles from './ordering.module.scss'
 import LinksOfPages from '../../components/LinksOfPages'
 

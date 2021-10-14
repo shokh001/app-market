@@ -8,52 +8,62 @@ const TheShop = () => {
         {
             id:1,
             url:'./assets/images/idea.png',
-            text:'Idea'
+            text:'Idea',
+            path:'/shop_page'
         },
         {
             id:2,
             url:'./assets/images/idea.png',
-            text:'Idea'
+            text:'Idea',
+            path:'/electronic_page'
         },
         {
             id:3,
             url:'./assets/images/idea.png',
-            text:'Idea'
+            text:'Idea',
+            path:'/shop_phones_and_smart_watches'
         },
         {
             id:4,
             url:'./assets/images/idea.png',
-            text:'Idea'
+            text:'Idea',
+            path:'#'
         },
         {
             id:5,
             url:'./assets/images/idea.png',
-            text:'Idea'
+            text:'Idea',
+            path:'#'
         },
         {
             id:6,
             url:'./assets/images/idea.png',
-            text:'Idea'
+            text:'Idea',
+            path:'#'
         },
         {
             id:7,
             url:'./assets/images/idea.png',
-            text:'Idea'
+            text:'Idea',
+            path:'#'
         },
         {
             id:8,
             url:'./assets/images/idea.png',
-            text:'Idea'
+            text:'Idea',
+            path:'#'
         },
         {
             id:9,
             url:'./assets/images/idea.png',
-            text:'Idea'
+            text:'Idea',
+            path:'#'
         },
         {
             id:10,
             url:'./assets/images/idea.png',
-            text:'Idea'
+            text:'Idea',
+            path:'#'
         }
     ]
     return (

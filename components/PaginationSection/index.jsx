@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Link from 'next/link'
 import ReactPaginate from "react-paginate";
 import styles from "../ProductCard/ProductCard.module.scss";
 
@@ -45,50 +46,52 @@ const LibraryPagination = () => {
       <div className={styles.paginationWrapper}>
         {items.map((item) => {
           return (
-            <div key={item.id} className={styles.ProductCard}>
-              <div className={styles.cardHeader}>
-                <p className="mb-0 font-montserrat-regular">
-                  <span></span> В рассрочку
-                </p>
-                <div className={styles.favourite}>
-                  <span className="icon icon-heart"></span>
-                  <div className={styles.toltip}>
-                    <p className="mb-0">Избранное</p>
+            <Link href='/product' key={item.id}>
+              <a className={styles.ProductCard}>
+                <div className={styles.cardHeader}>
+                  <p className="mb-0 font-montserrat-regular">
+                    <span></span> В рассрочку
+                  </p>
+                  <div className={styles.favourite}>
+                    <span className="icon icon-heart"></span>
+                    <div className={styles.toltip}>
+                      <p className="mb-0">Избранное</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className={styles.trolley}>
-                <span
-                  className={styles.trolleyIcon + " icon icon-trolley"}
-                ></span>
-              </div>
-
-              <div className={styles.cardBody}>
-                <div className={styles.discount}>
-                  <span className="font-montserrat-regular m-0">
-                    <p className="font-montserrat-bold m-0 d-block">-20%</p>{" "}
-                    скидка
-                  </span>
+                <div className={styles.trolley}>
+                  <span
+                    className={styles.trolleyIcon + " icon icon-trolley"}
+                  ></span>
                 </div>
-                <img
-                  className="img-fluid"
-                  src="./assets/images/camera.png"
-                  alt="productImg"
-                />
 
-                <p
-                  className={
-                    styles.deleteSum +
-                    " text-decoration-line-through mb-0 font-montserrat-medium"
-                  }
-                >
-                  1 000 000 сум
-                </p>
-                <h4 className="mb-0 font-montserrat-medium">{item.id} сум</h4>
-                <h5 className="mb-0 font-montserrat-bold">AA EliteBook G2</h5>
-              </div>
-            </div>
+                <div className={styles.cardBody}>
+                  <div className={styles.discount}>
+                    <span className="font-montserrat-regular m-0">
+                      <p className="font-montserrat-bold m-0 d-block">-20%</p>{" "}
+                      скидка
+                    </span>
+                  </div>
+                  <img
+                    className="img-fluid"
+                    src="./assets/images/camera.png"
+                    alt="productImg"
+                  />
+
+                  <p
+                    className={
+                      styles.deleteSum +
+                      " text-decoration-line-through mb-0 font-montserrat-medium"
+                    }
+                  >
+                    1 000 000 сум
+                  </p>
+                  <h4 className="mb-0 font-montserrat-medium">{item.id} сум</h4>
+                  <h5 className="mb-0 font-montserrat-bold">AA EliteBook G2</h5>
+                </div>
+              </a>
+            </Link>
           );
         })}
       </div>

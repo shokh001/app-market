@@ -1,11 +1,19 @@
 import React from 'react'
 import MyOrdersCard from '../MyOrdersCard';
 import PersonalDataCard from '../PersonalDataCard';
-// import ProfilePhoneNumber from '../ProfilePhoneNumber';
+import ProfilePhoneNumber from '../ProfilePhoneNumber';
 import styles from './Profile.module.scss'
+import Link from 'next/link'
+import EnterYourPhoneNumber from '../EnterYourPhoneNumber';
+import EnterCodeFromSMS from '../EnterCodeFromSMS';
 
-const Profile = () => {
-    
+const Profile = (
+    { change_phone_number,
+        enter_code_from_sms,
+        enter_phone_number,
+        create_account,
+        my_orders }
+) => {
 
     return (
         <div className={styles.profile + ' container'}>
@@ -25,22 +33,31 @@ const Profile = () => {
                 </div>
             </div>
 
-            <div className='d-flex'>
+            <div className='d-flex align-items-start position-relative'>
                 <div className={styles.personalCard}>
-                    <p className='font-montserrat-semi-bold'>
-                        <span className='icon icon-user'></span>
-                        Личные данные
-                    </p>
-                    <p className='font-montserrat-regular'>
-                        <span className='icon icon-phone'></span>
-                        Изменить номер телефона
-                    </p>
-                    <p className='font-montserrat-regular'>
-                        <span className='icon icon-truck'></span>
-                        Мои заказы
-                    </p>
-
-                    <p className='font-montserrat-regular'>Заказы в рассрочку</p>
+                    <Link href='/create_account'>
+                        <a style={{ fontWeight: create_account && 600 }} className='font-montserrat-regular'>
+                            <span className='icon icon-user'></span>
+                            Личные данные
+                        </a>
+                    </Link>
+                    <Link href='/change_phone_number'>
+                        <a style={{ fontWeight: change_phone_number && 600 }} className='font-montserrat-regular'>
+                            <span className='icon icon-phone'></span>
+                            Изменить номер телефона
+                        </a>
+                    </Link>
+                    <Link href='/my_orders'>
+                        <a style={{ fontWeight: my_orders && 600 }} className='font-montserrat-regular'>
+                            <span className='icon icon-truck'></span>
+                            Мои заказы
+                        </a>
+                    </Link>
+                    <Link href='/'>
+                        <a className='font-montserrat-regular'>
+                            Заказы в рассрочку
+                        </a>
+                    </Link>
 
                     <button type='button'>
                         <span className='icon icon-logout'></span>
@@ -48,11 +65,14 @@ const Profile = () => {
                     </button>
                 </div>
 
-                <MyOrdersCard />                
+                {
+                    create_account ? <PersonalDataCard />
+                        : change_phone_number ? <ProfilePhoneNumber />
+                            : enter_phone_number ? <EnterYourPhoneNumber /> :
+                                enter_code_from_sms ? <EnterCodeFromSMS />
+                                    : my_orders && <MyOrdersCard />
+                }
 
-                {/* <ProfilePhoneNumber /> */}
-
-                {/* <PersonalDataCard /> */}
             </div>
         </div>
     )
